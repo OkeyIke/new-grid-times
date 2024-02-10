@@ -1,11 +1,11 @@
-import React from 'react';
-import styled from 'styled-components/macro';
+import React from 'react'
+import styled from 'styled-components/macro'
 
-import { MARKET_DATA, SPORTS_STORIES } from '../../data';
+import { MARKET_DATA, SPORTS_STORIES } from '../../data'
 
-import MarketCard from '../MarketCard';
-import SectionTitle from '../SectionTitle';
-import MiniStory from '../MiniStory';
+import MarketCard from '../MarketCard'
+import SectionTitle from '../SectionTitle'
+import MiniStory from '../MiniStory'
 
 const SpecialtyStoryGrid = () => {
   return (
@@ -41,20 +41,28 @@ const SpecialtyStoryGrid = () => {
         </SportsStories>
       </SportsSection>
     </Wrapper>
-  );
-};
+  )
+}
 
 const Wrapper = styled.div`
   display: grid;
   gap: 48px;
-`;
+`
 
-const MarketsSection = styled.section``;
+const MarketsSection = styled.section``
 
-const MarketCards = styled.div``;
+const MarketCards = styled.div`
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+`
 
-const SportsSection = styled.section``;
+const SportsSection = styled.section``
 
-const SportsStories = styled.div``;
+const SportsStories = styled.div`
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+`
 
-export default SpecialtyStoryGrid;
+export default SpecialtyStoryGrid
