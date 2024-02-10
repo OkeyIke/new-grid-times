@@ -53,7 +53,7 @@ const Wrapper = styled.div`
   gap: 48px;
 
   @media (${QUERIES.tabletAndUp}) {
-    grid-template-columns: minmax(0px, auto);
+    grid-template-columns: 100%;
     gap: 64px;
   }
 
